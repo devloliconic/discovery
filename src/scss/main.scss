@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+$white: #fff;
+$peach: #FFC178;
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.container{
+    max-width: 1751px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.main{
+    &__img{
+        padding-bottom: 300px;
+        background: url(../img/main.jpg);
+        backdrop-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        background-size:cover;
+        background-position-x: center;
+        background-repeat: no-repeat;
+    }
+    &__flex{
+        display: flex;
+        align-items: flex-start;
+    }
+    &__social{
+        // display: flex;
+        // align-items: center;
+        // flex-direction: column;
+        // gap: 2rem;
+    }
+    &__follow{
+        transform: rotate(90deg);
+        font-weight: 600;
+        font-size: 1.8rem;
+        color: $white;
+        flex-basis: content;
+        margin: 0;
+    }
+    &__socialnav{
+        margin-top: 40px;
+    }
+    &__link{
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        width: 24px;
+        height: 24px;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        &_inst{
+            background-image: url(../img/social/inst.svg);
+        }
+        &_twitter{
+            background-image: url(../img/social/twitter.svg);
+        }
+        &_fb{
+            background-image: url(../img/social/fb.svg);
+        }
+    }
+    &__text{
+        //padding-top: 100px;
+    }
+} 
+
+.header{
+    padding-top: 6.4rem;
+    padding-bottom:19.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        color: $white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 3.3rem;
+        letter-spacing: 0.01em;
+        text-transform: capitalize;
+    }
+    &__nav{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+    &__link{
+        text-decoration: none;
+        color: $white;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        transition: .2s all linear;
+        &:hover{
+            color: #C0C0C0;
+        }
+    }
+    &__search{
+        display: flex;
+        align-items: center;
+        gap: 1.7rem;
+        text-decoration: none;
+        color: rgba($white, .6);
+        font-weight: 400;
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+        &::before{
+            content: "";
+            width:2rem;
+            height: 2rem;
+            background-image: url(../img/search.svg);
+            background-position: center center;
+            background-size: 13.84px 13.84px;
+            background-repeat: no-repeat;
+            opacity: .6;
+        }
+    }
+}
