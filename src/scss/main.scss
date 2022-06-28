@@ -22,16 +22,17 @@ body{
 }
 .main{
     &__img{
-        padding-bottom: 300px;
         background: url(../img/main.jpg);
-        backdrop-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        background-size:cover;
+        //backdrop-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        background-size:contain;
         background-position-x: center;
         background-repeat: no-repeat;
+        padding-bottom: 68rem;
     }
     &__flex{
         display: flex;
-        align-items: flex-start;
+        align-items: center;
+        gap: 400px;
     }
     &__social{
         // display: flex;
@@ -44,11 +45,16 @@ body{
         font-weight: 600;
         font-size: 1.8rem;
         color: $white;
+        flex-grow: 1;
         flex-basis: content;
         margin: 0;
     }
     &__socialnav{
-        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 60px;
     }
     &__link{
         cursor: pointer;
@@ -68,8 +74,58 @@ body{
             background-image: url(../img/social/fb.svg);
         }
     }
-    &__text{
-        //padding-top: 100px;
+    &__subtitle{
+        color: $peach;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 25px;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        &::before{
+            content: "";
+            width: 72px;
+            height: 2px;
+            background-color: $peach;
+        }
+    }
+    &__title{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 88px;
+        line-height: 100px;
+        text-transform: capitalize;
+        color: $white;
+    }
+    &__span{
+        font-weight: 700;
+        display: block;
+    }
+    &__btn{
+        display: flex;
+        margin: 0 auto;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 25px;
+        color: $white;
+        align-items: center;
+        gap: 9px;
+        &::after{
+            content: "";
+            width: 16px;
+            height: 24px;
+            background-image: url(../img/lowbtn.svg);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
     }
 } 
 
@@ -125,6 +181,87 @@ body{
             background-size: 13.84px 13.84px;
             background-repeat: no-repeat;
             opacity: .6;
+        }
+    }
+}
+
+.east{
+    //padding-top: 10px;
+    background-color: black;
+    &__flex{
+        display: flex;
+        align-items: center;
+        //justify-content: space-between;
+        gap: 23.2rem;
+    }
+    &__cover{
+        height: 720px;
+        flex-basis: 598px;
+    }
+    &__img{
+        height: 720px;
+        width: 598px;
+    }
+    &__text{
+    }
+    &__subtitle{
+        margin-top: 0;
+        margin-bottom: 2.7rem;
+        color: $peach;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 25px;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        &::before{
+            content: "";
+            width: 72px;
+            height: 2px;
+            background-color: $peach;
+        }
+    }
+    &__question{
+        margin-top: 0;
+        margin-bottom: 2.7rem;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6.4rem;
+        line-height: 87px;
+        max-width: 500px;
+        color: #FFFFFF;
+
+    }
+    &__answer{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 32px;
+        color: #FFFFFF;
+        max-width: 632px;
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FBD784;
+        &::after{
+            content: "";
+            width: 24px;
+            height: 16px;
+            background-image: url(../img/rightarrow.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
     }
 }
