@@ -24,10 +24,10 @@ body{
     &__img{
         background: url(../img/main.jpg);
         //backdrop-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        background-size:contain;
+        background-size:cover;
         background-position-x: center;
         background-repeat: no-repeat;
-        padding-bottom: 68rem;
+        padding-bottom: 80rem;
     }
     &__flex{
         display: flex;
@@ -186,6 +186,7 @@ body{
 }
 
 .east{
+    padding-bottom: 25rem;
     //padding-top: 10px;
     background-color: black;
     &__flex{
@@ -263,5 +264,70 @@ body{
             background-size: cover;
             background-repeat: no-repeat;
         }
+    }
+}
+.swipe{
+    background-color: black;
+}
+.swiper{
+    &__toptext{
+        margin: 0;
+        margin-bottom: 2.4rem;
+        display: flex;
+        align-items: center;
+        padding-top: 53.3rem;
+        justify-content: center;
+        color: $peach;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 25px;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        gap: 3rem;
+        &::after{
+            content: "";
+            width: 72px;
+            height: 2px;
+            background-color: $peach;
+        }
+        &::before{
+            content: "";
+            width: 72px;
+            height: 2px;
+            background-color: $peach;
+        }
+    }
+    &__logo{
+        margin: 0 auto;
+        text-align: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6.4rem;
+        line-height: 87px;
+        color: $white;
+        max-width: 700px;
+    }
+    //box-sizing: border-box;
+    //height: 720px;
+    &-slide{
+        background-image: url(../img/swipers.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+}
+
+.swiper-button-next{
+    &::after{
+        font-size: 24px;
+        color: $white;
+    }
+}
+.swiper-button-prev{
+    &::after{
+        font-size: 24px;
+        color: $white;
     }
 }
