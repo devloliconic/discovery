@@ -268,6 +268,7 @@ body{
 }
 .swipe{
     background-color: black;
+    padding-bottom: 22.7rem;
 }
 .swiper{
     &__toptext{
@@ -364,5 +365,83 @@ body{
     &::after{
         font-size: 24px;
         color: $white;
+    }
+}
+
+.culture{
+    background-color: black;
+    &__flex{
+        display: flex;
+        align-items: center;
+        gap: 21rem;
+    }
+    &__text{
+        flex-basis: 40%;
+    }
+    &__img{
+        width: 578px;
+        height: 720px;
+    }
+    &__toptext{
+        margin: 0;
+        margin-bottom: 39px;
+        display: flex;
+        align-items: center;
+        gap: 2.4rem;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 25px;
+        /* identical to box height */
+        color:$peach;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        &::before{
+            content: "";
+            width: 72px;
+            height: 2px;
+            background-color: $peach;
+
+        }
+    }
+    &__title{
+        margin: 0;
+        margin-bottom:27px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6.4rem;
+        line-height: 87px;
+        color: $white;
+    }
+    &__subtitle{
+        max-width: 632px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 32px;
+        color: $white;
+        margin-bottom: 2.7rem;
+    }
+    &__link{
+        display: flex;
+        
+        align-items: center;
+        gap: 9px;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FBD784;
+        padding-bottom: 4.1rem;
+        &::after{
+            content: "";
+            width: 24px;
+            height: 16px;
+            background-image: url(../img/rightarrow.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
     }
 }
