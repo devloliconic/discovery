@@ -1,8 +1,11 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap');
+
 
 $white: #fff;
 $peach: #FFC178;
+$DM: 'DM Sans';
 
 html{
     font-size: 10px;
@@ -369,6 +372,7 @@ body{
 }
 
 .culture{
+    padding-bottom:25rem;
     background-color: black;
     &__flex{
         display: flex;
@@ -442,6 +446,63 @@ body{
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
+        }
+    }
+}
+
+.footer{
+    background-color: black;
+
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 5.5rem;
+        border-bottom: 1px solid #979797 ;
+    }
+    &__logo{
+        margin: 0;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4.8rem;
+        line-height: 65px;
+        letter-spacing: 0.01em;
+        text-transform: capitalize;
+        color: $white;
+    }
+    &__flexlink{
+        display: flex;
+        align-items: center;
+        gap: 55px;
+    }
+    &__redy{
+        color: $white;
+        font-family:$DM;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.2rem;
+        line-height: 29px;
+        letter-spacing: -0.3px;
+        transition: .2s all linear;
+        &:hover{
+            color: #707070;
+        }
+    }
+    &__start{
+        color: black;
+        text-decoration: none;
+        font-family:$DM;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.7rem;
+        line-height: 22px;
+        padding: 24px 70px 24px 70px;
+        background-color: #FFA343;
+        border-radius: 8px;
+        transition: .2s all linear;
+        &:hover{
+            background-color: #ffa443c7;
         }
     }
 }
