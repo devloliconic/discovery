@@ -452,13 +452,14 @@ body{
 
 .footer{
     background-color: black;
+    padding-bottom: 18.8rem;
 
     &__header{
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding-bottom: 5.5rem;
-        border-bottom: 1px solid #979797 ;
+        border-bottom: 1px solid rgba(#979797, $alpha: .3) ;
     }
     &__logo{
         margin: 0;
@@ -503,6 +504,125 @@ body{
         transition: .2s all linear;
         &:hover{
             background-color: #ffa443c7;
+        }
+    }
+    &__flexmenu{
+        padding-top:5.5rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-bottom: 10.1rem;
+    }
+    &__subtitle{
+        margin: 0;
+        margin-bottom: 5rem;
+        color: $white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.6rem;
+        line-height: 49px;
+        letter-spacing: -0.3px;
+    }
+    &__form{
+        flex-basis:400px;
+        border-bottom: 1px solid rgba(#979797, $alpha: .3) ;
+    }
+    &__formflex{
+        display: flex;
+    }
+    &__input{
+        font-family: $DM;
+        box-sizing: border-box;
+        outline: none;
+        font-size: 1.5rem;
+        width: 330px;
+        background-color: transparent;
+        color: #7F7F7F;
+        border: 0;
+        padding: 19px 0 35px 14px;
+    }
+
+    &__send{
+        width: 70px;
+        height: 70px;
+        background-color: #FFA343;
+        background-image: url(../img/arrow.svg);
+        background-position: center center;
+        border-radius: 8px 8px 0px 0px;
+        background-size: 8px 13px;
+        background-repeat: no-repeat;
+        border: 0;
+    }
+    &__services{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4.5rem ;
+    }
+    &__servtext{
+        margin: 0;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 0px;
+        color: $peach;
+        letter-spacing: -0.231818px;
+    }
+    &__link{
+        text-decoration: none;
+        color: $white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.9rem;
+        line-height: 0px;
+        letter-spacing: -0.204545px;
+    }
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__linkbox{
+        display: flex;
+        align-items: center;
+        gap: 8.8rem;
+    }
+    &__infolink{
+        text-decoration: none;
+        font-family: $DM;
+        color: $white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 20px;
+        letter-spacing: -0.204545px;
+    }
+    &__social{
+        display: flex;
+        align-items: center;
+        gap: 5.1rem;
+    }
+    &__sosiallink{
+        display: block;
+        width: 30px;
+        height: 30px;
+        &_1{
+            background-image: url(../img/face.svg);
+            background-size: 12px 27px;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        &_2{
+            background-image: url(../img/twitter.svg);
+            background-size: 28px 24px;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        &_3{
+            background-image: url(../img/inst.svg);
+            background-size: 28px 30px;
+            background-repeat: no-repeat;
+            background-position: center center;
         }
     }
 }

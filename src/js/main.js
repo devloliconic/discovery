@@ -15,6 +15,6 @@ import '../scss/main.scss';
 // init Swiper:
 const swiper = new Swiper('.swiper', {
   // configure Swiper to use modules
-  modules: [Navigation, Pagination],
+  modules: [Navigation, Pagination]
   
 });
